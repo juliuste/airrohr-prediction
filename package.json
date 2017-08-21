@@ -12,6 +12,7 @@
 		"feinstaub"
 	],
 	"author": "Julius Tens <mail@juliustens.de>",
+	"contributors": ["Dirk Schumacher <mail@dirk-schumacher.net>"],
 	"homepage": "https://github.com/juliuste/airrohr-prediction",
 	"repository": "juliuste/airrohr-prediction",
 	"bugs": "https://github.com/juliuste/airrohr-prediction/issues",
