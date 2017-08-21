@@ -1,6 +1,6 @@
 # airrohr-prediction
 
-Predicts the next observation made by a given [airrohr sensor](https://luftdaten.info) using the lower bound of the [prediction interval](https://en.wikipedia.org/wiki/Prediction_interval#Unknown_mean.2C_unknown_variance) in order to provide a more robust threshold monitoring, e. g. in [feinstaub-bot](https://github.com/juliuste/feinstaub-bot).
+Predicts the next observation made by a given [airrohr sensor](https://luftdaten.info) using the lower bound of the [prediction interval](https://en.wikipedia.org/wiki/Prediction_interval#Unknown_mean.2C_unknown_variance) in order to provide a more robust threshold monitoring, e. g. in [feinstaub-bot](https://github.com/juliuste/feinstaub-bot). *Work in progress.*
 
 [![npm version](https://img.shields.io/npm/v/airrohr-prediction.svg)](https://www.npmjs.com/package/airrohr-prediction)
 [![Build Status](https://travis-ci.org/juliuste/airrohr-prediction.svg?branch=master)](https://travis-ci.org/juliuste/airrohr-prediction)
