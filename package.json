@@ -1,0 +1,41 @@
+{
+	"name": "airrohr-prediction",
+	"description": "Airrohr sensor lower boundary predictions",
+	"version": "0.0.0",
+	"keywords": [
+		"airrohr",
+		"luftdaten",
+		"luftdaten.info",
+		"sensor",
+		"fine dust",
+		"pollution",
+		"feinstaub"
+	],
+	"author": "Julius Tens <mail@juliustens.de>",
+	"homepage": "https://github.com/juliuste/airrohr-prediction",
+	"repository": "juliuste/airrohr-prediction",
+	"bugs": "https://github.com/juliuste/airrohr-prediction/issues",
+	"main": "./index.js",
+	"files": [
+		"index.js"
+	],
+	"dependencies": {
+		"distributions": "^1.0.0",
+		"fetch-ponyfill": "^4.1.0",
+		"lodash.round": "^4.0.4",
+		"pinkie-promise": "^2.0.1",
+		"statistics": "^3.3.0"
+	},
+	"devDependencies": {
+		"lodash.isnumber": "^3.0.3",
+		"tape": "^4.7.0"
+	},
+	"scripts": {
+		"test": "node test.js",
+		"prepublish": "npm test"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"license": "MIT"
+}
