@@ -28,8 +28,16 @@ Returns a `Promise` that will resolve in something like this:
 
 ```json
 {
-    "PM10": 2.754918127006258,
-    "PM2.5": 2.241109620013921
+    "PM10": {
+        "lower": 9.416389708062244,
+        "upper": 12.069610291937757,
+        "expected": 10.743
+    },
+    "PM2.5": {
+        "lower": 8.471014962809521,
+        "upper": 10.416985037190477,
+        "expected": 9.443999999999999
+    }
 }
 ```
 

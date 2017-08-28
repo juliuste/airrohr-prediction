@@ -22,8 +22,16 @@ const main = (id) =>
         const dist10 = distributions.Studentt(res.pm10.count - 1)
         const dist25 = distributions.Studentt(res.pm25.count - 1)
         return ({
-            'PM10': (res.pm10.mean - dist10.inv(0.8) * res.pm10.stdev * Math.sqrt(1 + (1 / res.pm10.count))),
-            'PM2.5': (res.pm25.mean - dist25.inv(0.8) * res.pm25.stdev * Math.sqrt(1 + (1 / res.pm25.count)))
+            'PM10': {
+                'lower': (res.pm10.mean - dist10.inv(0.8) * res.pm10.stdev * Math.sqrt(1 + (1 / res.pm10.count))),
+                'upper': (res.pm10.mean + dist10.inv(0.8) * res.pm10.stdev * Math.sqrt(1 + (1 / res.pm10.count))),
+                'expected': res.pm10.mean
+            },
+            'PM2.5': {
+                'lower': (res.pm25.mean - dist25.inv(0.8) * res.pm25.stdev * Math.sqrt(1 + (1 / res.pm25.count))),
+                'upper': (res.pm25.mean + dist25.inv(0.8) * res.pm25.stdev * Math.sqrt(1 + (1 / res.pm25.count))),
+                'expected': res.pm25.mean
+            }
         })
     })
     .catch((res) => {throw new Error(`error at sensor ${id}`)})
