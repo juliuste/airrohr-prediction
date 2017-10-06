@@ -1,7 +1,5 @@
 # airrohr-prediction
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/juliuste/airrohr-prediction.svg)](https://greenkeeper.io/)
-
 Predicts the next observation made by a given [airrohr sensor](https://luftdaten.info) using the lower bound of the [prediction interval](https://en.wikipedia.org/wiki/Prediction_interval#Unknown_mean.2C_unknown_variance) in order to provide a more robust threshold monitoring, e. g. in [feinstaub-bot](https://github.com/juliuste/feinstaub-bot). Thanks to [@dirkschumacher](https://github.com/dirkschumacher). *Work in progress.*
 
 [![npm version](https://img.shields.io/npm/v/airrohr-prediction.svg)](https://www.npmjs.com/package/airrohr-prediction)
