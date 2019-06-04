@@ -22,7 +22,7 @@
 	],
 	"dependencies": {
 		"distributions": "^1.0.0",
-		"fetch-ponyfill": "^5.0.0",
+		"fetch-ponyfill": "^6.1.0",
 		"lodash.round": "^4.0.4",
 		"pinkie-promise": "^2.0.1",
 		"statistics": "^3.3.0"
